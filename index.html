@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Samith Sankalpa" />
+    <meta property="og:description" content="UI/UX Engineer" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="https://www.samith.me" />
+    <meta
+      name="description"
+      content="I have a passion and enthusiasm for innovation and am eager to learn something new whenever possible."
+    />
+    <title>Samith Sankalpa: UI/UX Engineer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&family=Cardo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav collapsible collapsible--expanded">
+        <div><a href="/index.html" class="logo">Samith.me</a></div>
+
+        <img
+          src="images/icons8-hamburger-menu-50.png"
+          alt="menu"
+          class="nav__hamberg"
+        />
+
+        <ul id="activeNav" class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="/" class="active-tab active">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="/about.html" class="active-tab">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="active-tab">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="active-tab">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="grid grid--1x2 welcome">
+        <div class="welcome__section" data-aos="zoom-in-down">
+          <p id="text" class="welcome__heading"></p>
+          <p class="welcome__caption">
+            Create thoughtful digital experiences that are beautiful and fun.
+          </p>
+          <div class="centered-btn">
+            <a href="#contact" class="btn">Talk to Me</a>
+          </div>
+        </div>
+        <div class="welcome__image">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                images/welcome__img.webp    1x,
+                images/welcome__img@2x.webp 2x
+              "
+            />
+            <source
+              type="image/png"
+              srcset="images/welcome__img.png 1x, images/welcome__img@2x.png 2x"
+            />
+            <img
+              src="images/welcome__img.jpg"
+              alt="welcome_image"
+              class="welcome__deco-img"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <p id="portfolio" class="section-title">Recent Projects</p>
+
+      <div class="grid grid--1x2">
+        <div class="card-1" data-aos="fade-right">
+          <a
+            href="https://www.behance.net/gallery/127124159/Patient-Management-Mobile-App-Design"
+            target="_blank"
+          >
+            <p class="card__title">Patient Management Mobile App</p>
+            <p class="card__description">
+              Facilitates a doctor to carry out his medical activities through a
+              mobile application.
+            </p>
+            <div class="card__img item">
+              <img
+                src="images/patient_management.png"
+                alt="patient_management_image"
+              />
+              <div class="item-overlay top"></div>
+            </div>
+            <div class="btn-centered">
+              <a
+                href="https://www.behance.net/gallery/127124159/Patient-Management-Mobile-App-Design"
+                target="_blank"
+                class="btn--secondary"
+                >View This &#x2197;</a
+              >
+            </div>
+          </a>
+        </div>
+        <div class="card-2" data-aos="fade-left">
+          <a
+            href="https://www.behance.net/gallery/121797487/Vehicle-Information-App-Redesign-UIUX"
+            target="_blank"
+          >
+            <p class="card__title">Vehicle information app re-design</p>
+            <p class="card__description">
+              Improve and redesign the user experience of this app for
+              retrieving vehicle information.
+            </p>
+            <div class="card__img item">
+              <img
+                src="images/vehicle-information.png"
+                alt="vehicle_information_image"
+              />
+              <div class="item-overlay top"></div>
+            </div>
+            <div class="btn-centered">
+              <a
+                href="https://www.behance.net/gallery/121797487/Vehicle-Information-App-Redesign-UIUX"
+                target="_blank"
+                class="btn--secondary"
+                >View This &#x2197;</a
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="grid grid--1x2 horizontal-card"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <a
+          href="https://www.behance.net/gallery/123154677/UI-UX-conceptual-website"
+          target="_blank"
+        >
+          <div>
+            <img
+              src="images/web-prototype.png"
+              alt="ui_ux_image"
+              class="horizontal-img"
+            />
+          </div>
+        </a>
+
+        <div class="horizontal-middle">
+          <a
+            href="https://www.behance.net/gallery/123154677/UI-UX-conceptual-website"
+            target="_blank"
+          >
+            <p class="card__title">UI / UX learning</p>
+            <p class="card__description">
+              Designed for anyone interested in user interface design and
+              experience to gain the necessary knowledge.
+            </p>
+            <div>
+              <a
+                href="https://www.behance.net/gallery/123154677/UI-UX-conceptual-website"
+                target="_blank"
+                class="btn--secondary"
+                >View This &#x2197;</a
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="contact" class="contact-section" data-aos="zoom-in-up">
+        <div class="contact__description">
+          <img
+            src="/images/contact-background.png"
+            alt="contact__background"
+            class="img_full-width"
+          />
+          <p class="centered">
+            <b>This doesn't have to end yet — Let's Connect!</b><br />
+            Email me at
+            <mark>
+              <a href="mailto:samith.wss@gmail.com" class="email"
+                >samith.wss@gmail.com</a
+              ></mark
+            >
+            and let's talk about anything...
+          </p>
+
+          <div class="contact__icons">
+            <div data-aos="zoom-in-down">
+              <a href="https://www.behance.net/samithsankalpa" target="_blank"
+                ><img src="images/behance.png" alt="behance.net-samithsankalpa"
+              /></a>
+            </div>
+            <div data-aos="zoom-in-down">
+              <a
+                href="https://www.linkedin.com/in/samith-sankalpa-389728189/"
+                target="_blank"
+                ><img
+                  src="images/linkedin.png"
+                  alt="linkedin.com-samith-sankalpa"
+                  class="middle--icon"
+              /></a>
+            </div>
+            <div data-aos="zoom-in-down">
+              <a href="https://www.instagram.com/samiii___98/" target="_blank"
+                ><img
+                  src="images/instagram.png"
+                  alt="instagram.com-samiii___98"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <button id="scrollToTopBtn"><span>&#8593;</span></button>
+        </footer>
+      </div>
+
+      <hr class="separator" />
+      <p class="copyright">
+        Designed by Samith Sankalpa in 2022. All rights reserved.
+      </p>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
