@@ -26,26 +26,31 @@
   </head>
   <body>
     <div class="container">
-      <nav class="nav collapsible collapsible--expanded">
-        <div><a href="/index.html" class="logo">Samith.me</a></div>
-        <img
-          src="images/icons8-hamburger-menu-50.png"
-          alt="menu"
-          class="nav__hamberg"
-        />
-        <ul id="activeNav" class="list nav__list collapsible__content">
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <img
+            src="images/icons8-hamburger-menu-50.png"
+            alt=""
+            class="menu-icon"
+          />
+        </span>
+
+        <a href="#" class="logo">Samith.Me</a>
+
+        <ul class="main-nav" id="js-menu">
           <li class="nav__item">
-            <a href="/" class="active-tab">Home</a>
+            <a href="/" class="nav-links">Home</a>
           </li>
           <li class="nav__item">
-            <a href="/about.html" class="active-tab active">About</a>
+            <a href="/about.html" class="nav-links">About</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="active-tab">Contact</a>
+            <a href="#contact" class="nav-links">Contact</a>
           </li>
         </ul>
       </nav>
 
+      <!-- About Section  -->
       <div class="grid grid--1x2 about-section">
         <div class="about-img">
           <img
@@ -54,12 +59,7 @@
             class="my-img"
           />
         </div>
-        <div class="about__description" data-aos="zoom-in-up">
-          <img
-            src="images/about-background.png"
-            alt="about_background_image"
-            class="img_full-width"
-          />
+        <div class="about__description">
           <div class="about-centered">
             <p class="about__title">Glad you're here!</p>
             <p class="about__detail">
@@ -79,7 +79,9 @@
           </div>
         </div>
       </div>
-      <div data-aos="fade-right">
+      <!-- About Section  -->
+
+      <div class="grid--block">
         <p class="section-title">Education</p>
         <div class="grid grid--1x3">
           <div class="personal__detail-block">
@@ -106,7 +108,7 @@
         </div>
       </div>
       <hr class="section-divider" />
-      <div class="experience" data-aos="fade-left">
+      <div class="grid--block">
         <p class="section-title">Work Experience</p>
         <div class="grid grid--1x3">
           <div class="personal__detail-block">
@@ -136,6 +138,7 @@
         </div>
       </div>
 
+      <!-- Contact Section  -->
       <div id="contact" class="contact-section" data-aos="zoom-in-up">
         <div class="contact__description">
           <img
@@ -180,9 +183,7 @@
           </div>
         </div>
         <footer>
-          <button id="scrollToTopBtn" class="about-top">
-            <span>&#8593;</span>
-          </button>
+          <button id="scrollToTopBtn"><span>&#8593;</span></button>
         </footer>
       </div>
 
@@ -191,7 +192,6 @@
         Designed by Samith Sankalpa in 2022. All rights reserved.
       </p>
     </div>
-
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

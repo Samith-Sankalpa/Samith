@@ -1,10 +1,10 @@
 // NavBar
-const collapsibles = document.querySelectorAll(".collapsible");
-collapsibles.forEach((item) =>
-  item.addEventListener("click", function () {
-    this.classList.toggle("collapsible--expanded");
-  })
-);
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
+
+navBarToggle.addEventListener("click", function () {
+  mainNav.classList.toggle("active");
+});
 
 // Bottom to Top btn
 var scrollToTopBtn = document.getElementById("scrollToTopBtn");
