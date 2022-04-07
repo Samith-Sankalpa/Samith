@@ -396,14 +396,39 @@ a {
   margin-top: 48px;
   text-align: center;
 }
- .welcome__heading {
+
+.typewriter-title {
   align-self: center;
   color: var(--color-headings);
   font-family: "Cardo", serif;
   font-size: 3.5rem;
   font-weight: bold;
   margin: 0;
+}
+
+ .welcome__heading { 
+  text-align: center;
+  color: var(--color-headings);
+  font-family: "Cardo", serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: 
+  typing 2s steps(20, end) forwards;
+  width: 0; 
 } 
+
+.typewriter-container{
+  display: flexbox;
+  text-align: left !important;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
 .welcome__caption {
   font-family: circular-light;
@@ -430,6 +455,11 @@ a {
     font-size: 6.4rem;
     text-align: left;
   } 
+  .typewriter-title {
+    text-align: left;
+    align-self: center;
+    font-size: 6.4rem;
+  }
   .welcome__caption {
     font-size: 1.6rem;
     margin: 1rem 0 4rem 0;
