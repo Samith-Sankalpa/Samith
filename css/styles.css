@@ -8,10 +8,10 @@
 }
 
  @font-face {
-  font-family: circular-light;
-  src: url(/сircular-font/Circular/CircularStd-Book.otf);
-} 
-
+   src: url(/сircular-font/Circular/CircularStd-Book.otf);
+   font-family: circular-medium;
+}
+ 
 *,
 *::after,
 *::before {
@@ -33,7 +33,7 @@ body {
 html, body {overflow-x: hidden !important;width: 100vw !important;}
 
 .container {
-  margin: 0 2rem;
+  margin: 0 2rem; 
 }
 
 /* Typography */
@@ -82,7 +82,7 @@ a {
 
 .link-arrow {
   color: var(--color-headings);
-  font-family: "Cardo", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -107,39 +107,34 @@ a {
 .btn {
   background: var(--color-primary);
   border: 0;
+  border-radius: 3px;
   color: #fff;
   cursor: pointer;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  font-family: "Cardo", serif;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding: 0.8rem 1.2rem;
-  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem; 
+  padding: 1rem 2rem;
+  white-space: nowrap; 
 }
-.btn:hover {
-  background: #07005c;
+.btn:hover { 
   text-decoration: underline;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .btn--secondary {
   color: var(--color-headings);
   cursor: pointer;
-  font-family: "Cardo", serif;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem; 
+  font-weight: 500;
   text-decoration: underline;
   white-space: nowrap;
 }
 
 .btn--secondary:hover {
   color: #07005c;
+  text-decoration: none;
 }
-
-@media screen and (min-width: 1024px) {
-  .btn {
-    font-size: 1.6rem;
-  }
-}
+ 
 
 /* Grid  */
 .grid {
@@ -219,9 +214,9 @@ a {
 
 .section-title {
   color: var(--color-primary);
-  font-family: circular-light;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.8rem;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -243,7 +238,7 @@ a {
 
 .about__title {
   color: var(--color-headings);
-  font-family: "Cardo", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 0;
@@ -314,8 +309,8 @@ a {
 
 .centered {
   color: var(--color-body);
-  font-family: circular-light;
-  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
   line-height: 3.5rem;
   margin: 0 1rem;
   text-align: center;
@@ -340,7 +335,7 @@ a {
   }
   
   .centered {
-    font-size:2.3rem;
+    font-size:2.4rem;
     left: 50%;
     line-height: 4rem;
     position: absolute;
@@ -352,13 +347,13 @@ a {
 
 @media screen and (min-width: 1024px) {
   .centered  {
-  font-size: 4.8rem;
+  font-size: 4.4rem;
   left: 50%;
-  line-height: 9rem;
+  line-height: 13rem;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 100%;
   }
 }
 
@@ -420,7 +415,7 @@ a {
 
 .typewriter-title {
   color: var(--color-headings);
-  font-family: "Cardo", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 3.6rem;
   font-weight: bold;
   margin: 0; 
@@ -429,17 +424,17 @@ a {
  .welcome__heading { 
   text-align: center;
   color: var(--color-headings);
-  font-family: "Cardo", serif;
-  font-size: 2.8rem;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem; 
+  font-weight: 600;
   margin: 0;
   line-height: 5rem;
 } 
-
  
 .welcome__caption {
-  font-family: circular-light;
-  font-size: 1.5rem;
+  font-family: circular-medium;
+  font-size: 1.6rem;
+  font-weight: 400;
   margin: 3rem 0;
 }
 
@@ -468,7 +463,7 @@ a {
     font-size: 6.4rem;
   }
   .welcome__caption {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 1rem 0 4rem 0;
     text-align: left;
   }
@@ -503,7 +498,7 @@ a {
 
 .card__title {
   color: var(--color-headings);
-  font-family: "Cardo", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
@@ -511,8 +506,8 @@ a {
  
 .card__description {
   color: var(--color-body);
-  font-family: circular-light;
-  font-size: 1.5rem;
+  font-family: circular-medium;
+  font-size: 1.6rem;
   margin: 0.5rem 0 1.5rem 0;
 }
 
@@ -549,7 +544,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .card__description {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 1.5rem 0;
   }
   .card__title {
@@ -594,7 +589,7 @@ ul {
 }
 
 .main-nav li {
-  font-family: "Cardo", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -604,11 +599,11 @@ ul {
 }
 
 .logo {
-  color: var(--color-headings);
+  color: var(--color-primary);
   display: inline-block;
-  font-family: "Cardo", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 0.8rem;
 }
 
@@ -649,7 +644,10 @@ ul {
     margin: 0;
   }
   .nav-links { 
-   margin: 0 3rem;
+   margin: 0 3rem;  
+   font-family: 'Poppins', sans-serif;
+   font-weight: normal; 
+
   }
   .nav-links:hover { 
    border-bottom: 2px solid var(--color-headings);
