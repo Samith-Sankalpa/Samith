@@ -366,18 +366,23 @@ a {
   height: 32px;
   width: 32px;
 }
+.copyright__section {
+  background: #0053ed42;
+ padding: 0.5rem 0;
+}
 
 .copyright {
-  color: var(--color-body);
-  font-family: circular-light;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  color: var(--color-body); 
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem; 
   text-align: center;
+  margin: 0%;
 }
 
 .separator {
-  margin-top: 0;
+  display: none;
 }
+ 
 
 .section-divider {
   background-color: #eee !important;
@@ -386,8 +391,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .copyright {
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.3rem; 
     text-align: left;
   }
   .contact__icons {
@@ -395,6 +399,13 @@ a {
   }
   .middle--icon {
     margin: 0 15rem;
+  }
+  .separator {
+    display: flex;
+  }
+  .copyright__section {
+    background: none;
+    margin: 0 9rem ;
   }
 }
 
@@ -425,7 +436,7 @@ a {
   text-align: center;
   color: var(--color-headings);
   font-family: 'Poppins', sans-serif;
-  font-size: 2.8rem; 
+  font-size: 3rem; 
   font-weight: 600;
   margin: 0;
   line-height: 5rem;
@@ -433,7 +444,7 @@ a {
  
 .welcome__caption {
   font-family: circular-medium;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin: 3rem 0;
 }
@@ -462,8 +473,7 @@ a {
     text-align: left;
     font-size: 6.4rem;
   }
-  .welcome__caption {
-    font-size: 1.8rem;
+  .welcome__caption { 
     margin: 1rem 0 4rem 0;
     text-align: left;
   }
@@ -507,7 +517,7 @@ a {
 .card__description {
   color: var(--color-body);
   font-family: circular-medium;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 0.5rem 0 1.5rem 0;
 }
 
@@ -543,8 +553,7 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .card__description {
-    font-size: 1.8rem;
+  .card__description { 
     margin: 1.5rem 0;
   }
   .card__title {
