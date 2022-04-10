@@ -226,7 +226,7 @@ a {
 }
 
 .my-img {
- width: 75%;
+ width: 85%;
 }
 
 .gif {
@@ -257,6 +257,11 @@ a {
 
 .about-section {
   margin : 10rem 0; 
+}
+
+.about-img  {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -615,7 +620,7 @@ a {
 
  .main-nav {
    display: none; 
-  list-style-type: none;
+   list-style-type: none;
 }
 
 ul {
@@ -630,7 +635,7 @@ ul {
 .main-nav li {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .main-nav li > a {
@@ -660,9 +665,8 @@ ul {
 }
 
  .nav__item {
-  border-bottom: 1px solid rgb(167, 163, 163);
   font-size: 1.6rem;
-  padding: 1rem 0rem;    
+  padding: 1rem 0rem;     
 }
 .navbar {  
   position: fixed; 
@@ -699,9 +703,7 @@ ul {
   .main-nav {
     display: flex;
   }
-  ul .main-nav {
-    margin-left: 5rem !important;
-  }
+ 
 
   .main-nav li {
     margin: 0;
