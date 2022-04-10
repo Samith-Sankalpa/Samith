@@ -229,13 +229,12 @@ a {
  width: 75%;
 }
 
-.about-img {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 48px;
+.gif {
+  display: none;
+  width: 28px;
+  margin-right: 1rem;
 }
-
+ 
 .about__description {
   align-self: center;
   text-align: center; 
@@ -257,10 +256,13 @@ a {
 }
 
 .about-section {
-  margin-bottom: 12rem; 
+  margin : 10rem 0; 
 }
 
 @media screen and (min-width: 1024px) {
+  .gif {
+    display: inline;
+  }
   .about__title {
     font-size: 5.8rem;
   }
@@ -269,7 +271,7 @@ a {
   }
 
   .about-section {
-    margin: 8rem 0;
+    margin: 8rem 0 15rem 0;
 }
   .about__description {
     text-align: left !important;
@@ -280,9 +282,8 @@ a {
     line-height: 3.5rem;
     margin: 2rem 0 3rem 0;
   }
-  .my-img {
-    height: 500px;
-    width: 500px; 
+  .my-img { 
+    width: 85%;  
   }
 
   .about-img {
@@ -389,7 +390,7 @@ a {
   width: 32px;
 }
 .copyright__section {
-  background: #0053ed42;
+  background: #d1e4ff90;
  padding: 1rem 0;
 }
 
@@ -441,8 +442,7 @@ a {
  width: 100%;
 }
 
-.welcome__section {
-  margin-top: 5rem;
+.welcome__section { 
   text-align: center;
 }
 
@@ -484,7 +484,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .welcome {
-    margin-top: 10rem !important;
+    margin: 10rem 0 15rem 0 !important;
   }
   .welcome__deco-img {
     width: 100%;
@@ -511,6 +511,9 @@ a {
   }
   .welcome {
     margin-top: 7.5rem;
+  }
+  .welcome__section {
+    align-self: center;
   }
 }
 
@@ -772,9 +775,11 @@ footer {
     font-weight: bold;
     line-height: 44px;
     width: 48px;
+     
   }
   #scrollToTopBtn:hover {
     background-color: #5a5e5c;
+    transition: background-color 0.3s;
   }
  
 }
