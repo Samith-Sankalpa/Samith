@@ -348,8 +348,9 @@ li:hover::after {
   color: var(--color-body);
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
-  line-height: 3.5rem; 
+  line-height: 3.6rem; 
   text-align: center;
+  margin: 0 2rem;
 }
 
 .bold-text {
