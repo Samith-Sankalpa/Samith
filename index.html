@@ -25,34 +25,24 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <nav class="black">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <img
+          src="images/icons8-hamburger-menu-50.png"
+          alt=""
+          style="width: 32px"
+        />
+      </label>
+      <label class="logo-name">Samith.</label>
+      <ul>
+        <li><a href="" class="live-active">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
     <div class="container">
-      <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <img
-            src="images/icons8-hamburger-menu-50.png"
-            alt=""
-            class="menu-icon"
-          />
-        </span>
-
-        <a href="#" class="logo">Samith.</a>
-
-        <ul class="main-nav" id="js-menu">
-          <li class="nav__item">
-            <a href="/index.html" class="nav-links active">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="/about.html" class="nav-links">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#portfolio" class="nav-links">Portfolio</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav-links">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
       <!-- Hero Area  -->
       <div class="grid grid--1x2 welcome">
         <div class="welcome__section" data-aos="fade-up">
@@ -207,23 +197,24 @@
       <!-- Recent Projects -->
     </div>
     <!-- container  -->
+
     <!-- Contact Section  -->
     <div id="contact" class="contact-section" data-aos="zoom-in-up">
-      <div class="grid grid--1x2">
-        <div>
-          <p class="centered">
-            <span class="bold-text"
-              >This doesn't have to end yet — Let's Connect!</span
-            ><br />
-            Email me at
-            <span class="hilight-text">
-              <a href="mailto:samith.wss@gmail.com" class="email"
-                >samith.wss@gmail.com</a
-              ></span
-            >
-            and let's talk about anything...
-          </p>
-        </div>
+      <div class="container">
+        <p class="centered">
+          <span class="bold-text"
+            >This doesn't have to end yet — Let's Connect!</span
+          ><br />
+          Email me
+          <span class="hilight-text">
+            <a href="mailto:samith.wss@gmail.com" class="email"
+              >samith.wss@gmail.com</a
+            ></span
+          >
+          and let's talk about anything
+        </p>
+
+        <!-- contact icon  -->
         <div class="contact__icons">
           <div>
             <a href="https://www.behance.net/samithsankalpa" target="_blank"
@@ -246,6 +237,8 @@
             /></a>
           </div>
         </div>
+        <!-- contact icon  -->
+
         <div class="contact__labels">
           <ul>
             <li class="social-name">
@@ -272,19 +265,19 @@
             </li>
           </ul>
         </div>
-      </div>
 
-      <footer>
-        <button id="scrollToTopBtn"><span>&#8593;</span></button>
-      </footer>
-      <div class="copyright__section">
-        <hr class="separator" />
-        <p class="copyright">
-          Designed by Samith Sankalpa in 2022. All rights reserved.
-        </p>
+        <footer>
+          <button id="scrollToTopBtn"><span>&#8593;</span></button>
+        </footer>
       </div>
+      <!-- Contact Section  -->
     </div>
-    <!-- Contact Section  -->
+    <div class="copyright__section">
+      <hr class="separator" />
+      <p class="copyright">
+        Designed by Samith Sankalpa in 2022. All rights reserved.
+      </p>
+    </div>
 
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

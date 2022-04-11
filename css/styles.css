@@ -16,6 +16,9 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+  list-style: none;
 }
 
 html {
@@ -105,16 +108,8 @@ a {
 }
 
 /* List  */
-li {
-  list-style: none;
-  text-align: left;
-  padding : 5rem 0 0rem 5rem;
-  margin-left: 10rem;
-}
  
-li:hover::after {
-  width: 100%;
-}
+ 
 .social-name a::after {
   content: '';
   display: block;
@@ -212,6 +207,9 @@ li:hover::after {
   
   .grid--block {
     margin: 0 3rem;
+  }
+  .experience-block {
+    margin-bottom: 10rem;
   }
 }
 
@@ -344,6 +342,7 @@ li:hover::after {
   margin-top: 2.4rem;
 }
 
+
 .centered {
   color: var(--color-body);
   font-family: 'Poppins', sans-serif;
@@ -358,7 +357,8 @@ li:hover::after {
 }
 
 .hilight-text a {
-  text-decoration: underline;   
+  text-decoration: none;   
+  font-weight: 600;
 }
 
 .hilight-text a:hover {
@@ -370,14 +370,16 @@ li:hover::after {
 }
 
 .contact__labels {
-  display: none;
+  display: none;   
+  font-family: circular-medium;
 }
 
 .contact__icons {
   display: flex; justify-content: space-around;
-  margin: 68px 0 32px 0;
+  margin: 1rem 0 3rem 0;
 }
 
+ 
 
 @media screen and (min-width: 768px) {
   
@@ -389,36 +391,37 @@ li:hover::after {
 
 @media screen and (min-width: 1024px) {
   .contact-section {
-    padding: 3rem 9rem 0 9rem; 
     background: rgba(30, 184, 255, 0.063);
   }
 
   .contact__labels {
     display: flex;
     align-items: center;
-    font-family: 'Source Code Pro', monospace;
-    
+    font-size: 1.8rem; 
   }
 
+  .social-name {
+    margin-right: 5rem; 
+  }
+
+
   .social-name > a{
-  color: var(--color-body);
-  border-bottom: 2px solid var(--color-body);
+  color: var(--color-body); 
   }
   .bold-text {
-    font-size: 3.6rem;
-  font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
   }
   .centered  {
     padding-top: 5rem; 
     font-size: 2.4rem;
-    line-height: 5rem;
+    line-height: 8rem;
     text-align: left;
+    font-weight: 600;
     margin: 0;
-    font-family: 'Source Code Pro', monospace;
   }
   .contact__icons {
     display: none;
-   
   }
 }
 
@@ -450,9 +453,7 @@ li:hover::after {
 }
 
 @media screen and (min-width: 1024px) {
-  .contact-section {
-    margin-top: 5.2rem;
-  }
+ 
 
   .copyright {
     font-size: 1.3rem; 
@@ -650,139 +651,125 @@ li:hover::after {
 }
  
 /* Navigation  */
+a {
+  text-decoration: none;
+}
  
 
- .main-nav {
-   display: none; 
-   list-style-type: none;
-}
+nav {
+  height: 80px;
+  width: 100%;
+} 
 
-ul {
-  padding: 0;
-  text-align: center; 
-}
-
-.menu-icon {
-  width: 32px; 
-}
-
-.main-nav li {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-.main-nav li > a {
-  color: var(--color-headings);
-}
-
-.logo {
+label.logo-name {
   color: var(--color-primary);
-  display: inline-block;
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.6rem;
   font-weight: 600;
-  margin-top: 0.8rem;
-  margin-right: 20rem !important;
+  line-height: 80px;
+  padding: 0 9rem;
 }
 
-.navbar-toggle {
-  cursor: pointer;   
-  height: 32px;
-  position: absolute;
-  right: 2rem;
-  top: 1rem;
+nav ul {
+  float: right ;
+  margin-right: 20px;
 }
 
-.active {
-  display: block;
-}
-
- .nav__item {
-  font-size: 1.6rem;
-  padding: 1rem 0rem;     
-}
-.navbar {  
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
-}
-
-@media screen and (min-width: 320px) {
-  .logo {
-    margin-right: 25rem;
-  }
-}
-@media screen and (min-width: 375px) {
-  .logo {
-    margin-right: 30rem !important;
-  }
-}
-
-
-@media screen and (min-width: 768px) {
-  .navbar {
-    align-items: center;
-    display: flex;
-    height: 70px;
-    position: relative;   
-    top: 0; 
-  }
-  .wide-view {
-    float: right !important;
-    display: flex;
-    justify-content: space-around !important;
-    margin-left: auto !important;
-  }
-  .main-nav {
-    display: flex;
-  }
- 
-
-  .main-nav li {
-    margin: 0;
-  }
- 
-  .nav-links { 
-   margin: 0 3rem;  
-   font-family: 'Poppins', sans-serif;
-   font-weight: normal;  
-
-  }
-  .nav-links:hover {  
-    border-bottom: 2px solid var(--color-primary);
-  }
-
-  .logo {
-    margin-top: 0;
-    margin-right: 18rem;
-  }
-  .navbar-toggle {
-    display: none;
-  }
-  .nav__item {
-   border: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .logo {
-    font-size: 3.6rem;
-    font-weight: 600;
-    margin-right: 30rem !important;
-  }
-  .nav-links { 
-    margin: 0 5rem;
-  }
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 80px;
   
 }
 
-@media screen and (min-width: 1440px) {
-  .logo {
-    margin-right: 56rem !important;
+nav ul li a {
+  color: var(--color-headings);
+  font-size: 1.8rem;
+  padding: 0.7rem 3.2rem ;
+  font-family: 'Poppins', sans-serif;
+}
+
+a.live-active,a:hover {
+  text-decoration: underline;
+  transition: .5s;
+  color: var(--color-primary);
+}
+
+.checkbtn {
+  font-size: 30px; 
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+
+
+@media screen and (max-width:952px) {
+  label.logo-name {
+      font-size: 3rem;
+      padding-left: 2.4rem;
   }
-   
-  
+  nav ul li a {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  a.live-active,a:hover {
+    text-decoration: underline;
+    transition: .5s;
+    color: var(--color-primary);
+    background: rgb(255, 234, 234);
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width:858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li  a {
+    font-size: 20px;
+  }
+
+  a:hover,a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+@media screen and (max-width:768px) {
+  nav {
+  background: #0082e64b;
+  position: fixed;
+  }
+
+   label.logo-name {
+    color: var(--color-headings) !important;   
+  }
 }
 
 
@@ -836,7 +823,6 @@ footer {
     border-bottom: 2px solid var(--color-primary);  
 }
 
-  .active:hover{  
-}
+   
 }
  

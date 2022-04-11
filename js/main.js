@@ -29,3 +29,14 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 300) {
+      $(".black").css("background", "blue");
+    } else {
+      $(".black").css("background", "#333");
+    }
+  });
+});
