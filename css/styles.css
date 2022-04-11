@@ -403,6 +403,7 @@ a {
   .social-name {
     margin-right: 5rem; 
   }
+  
 
 
   .social-name > a{
@@ -654,7 +655,6 @@ a {
 a {
   text-decoration: none;
 }
- 
 
 nav {
   height: 80px;
@@ -684,9 +684,9 @@ nav ul li {
 
 nav ul li a {
   color: var(--color-headings);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 0.7rem 3.2rem ;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; 
 }
 
 a.live-active,a:hover {
@@ -718,6 +718,9 @@ a.live-active,a:hover {
   nav ul li a {
     font-size: 1.6rem;
     color: #fff;
+  }
+  a.live-active {
+    text-decoration: none !important;
   }
   a.live-active,a:hover {
     text-decoration: underline;
@@ -762,9 +765,9 @@ a.live-active,a:hover {
 }
 
 @media screen and (max-width:768px) {
-  nav {
-  background: #0082e64b;
+  nav { 
   position: fixed;
+  
   }
 
    label.logo-name {
