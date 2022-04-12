@@ -37,7 +37,7 @@ body {
 html, body {overflow-x: hidden !important;width: 100vw !important;}
 
 .container {
-  margin: 0 2rem; 
+  margin: 0 1.6rem; 
 }
 
 /* Typography */
@@ -245,6 +245,7 @@ a {
   font-size: 2.8rem;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 2.4rem;
 }
 
 .my-img {
@@ -356,14 +357,7 @@ a {
   font-weight: 600;
 }
 
-.hilight-text a {
-  text-decoration: none;   
-  font-weight: 600;
-}
-
-.hilight-text a:hover {
-  text-decoration: underline;
-}
+ 
 
 .email {
   text-decoration: solid underline 2px;
@@ -390,10 +384,11 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .contact-section {
-    background: rgba(30, 184, 255, 0.063);
+  
+  .hilight-text {
+      font-size: 2rem;
+      color: #21212198;
   }
-
   .contact__labels {
     display: flex;
     align-items: center;
@@ -412,6 +407,11 @@ a {
   .bold-text {
     font-size: 5rem;
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(91.06deg, #2C5DBD 70.12%, rgba(52, 255, 73, 0) 126.64%, rgba(51, 227, 93, 0.17448) 127.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
   .centered  {
     padding-top: 5rem; 
@@ -475,41 +475,34 @@ a {
 }
 /* Hero area  */
 .welcome {
-  margin : 10rem 0;
+  margin : 16rem 0 10rem 0;
+  /* ok  */
 }
  
-
 .welcome__deco-img {
  width: 100%;
 }
 
 .welcome__section { 
   text-align: center;
+  /* ok  */
 }
-
-.typewriter-title {
-  color: var(--color-headings);
-  font-family: 'Poppins', sans-serif;
-  font-size: 3.6rem;
-  font-weight: bold;
-  margin: 0; 
-}
-
+ 
  .welcome__heading { 
-  text-align: center;
   color: var(--color-headings);
   font-family: 'Poppins', sans-serif;
-  font-size: 3rem; 
+  font-size: 3.2rem; 
   font-weight: 600;
+  line-height: 6rem;
   margin: 0;
-  line-height: 5rem;
+  /* ok  */
 } 
  
 .welcome__caption {
   font-family: circular-medium;
-  font-size: 1.8rem;
-  font-weight: 400;
-  margin: 3rem 0;
+  font-size: 2rem; 
+  margin: 3.2rem 0;
+  /* ok  */
 }
 
 .btn--welcome {
@@ -535,10 +528,7 @@ a {
     text-align: left;
     line-height: 9rem;
   } 
-  .typewriter-title {
-    text-align: left;
-    font-size: 6.4rem;
-  }
+   
   .welcome__caption { 
     margin: 1rem 0 4rem 0;
     text-align: left;
