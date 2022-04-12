@@ -340,20 +340,21 @@ a {
 
 /* Contact Section  */
 .contact-section {
-  margin-top: 2.4rem;
+  margin: 16rem 0 10rem 0;
 }
 
 
 .centered {
   color: var(--color-body);
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  line-height: 3.6rem; 
+  
   text-align: center;
-  margin: 0 2rem;
+   
 }
 
 .bold-text {
+  font-size: 3rem;
+  line-height: 6rem; 
   font-weight: 600;
 }
 
@@ -370,7 +371,12 @@ a {
 
 .contact__icons {
   display: flex; justify-content: space-around;
-  margin: 1rem 0 3rem 0;
+  margin: 8rem 0 3rem 0;
+}
+
+.hilight-text {
+  font-size: 2rem; 
+  color: var(--color-primary);
 }
 
  
@@ -407,11 +413,7 @@ a {
   .bold-text {
     font-size: 5rem;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(91.06deg, #2C5DBD 70.12%, rgba(52, 255, 73, 0) 126.64%, rgba(51, 227, 93, 0.17448) 127.5%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    
   }
   .centered  {
     padding-top: 5rem; 
@@ -432,7 +434,7 @@ a {
 }
 .copyright__section {
   background: #d1e4ff90;
- padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .copyright {
@@ -471,6 +473,7 @@ a {
   }
   .copyright__section {
     background: none; 
+    margin: 0 9rem;
   }
 }
 /* Hero area  */
@@ -553,6 +556,7 @@ a {
   background: #FDEFEF;
   cursor: pointer;
   padding: 2rem 2rem;
+  border-radius: 4px;
 }
  
 .card-2 {
@@ -577,7 +581,7 @@ a {
   color: var(--color-body);
   font-family: circular-medium;
   font-size: 1.8rem;
-  margin: 0.5rem 0 1.5rem 0;
+  margin: 1rem 0 1.5rem 0;
 }
  
 .card__img {
@@ -598,8 +602,9 @@ a {
 .horizontal-card {
   border: 2px solid var(--color-headings);
   cursor: pointer;
-  margin: 32px 0 32px 0;
+  margin: 3.2rem 0;
   padding: 2rem;
+  border-radius: 4px;
 }
 
 .horizontal-card:hover {
@@ -608,7 +613,6 @@ a {
 
 .horizontal-img {
   width: 100%;
-   
 }
 
 @media screen and (min-width: 1024px) {
