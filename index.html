@@ -37,17 +37,16 @@
       </nav>
       <a href="" class="logo-mobile">Samith.</a>
       <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
+        <a id="kk" class="closebtn">&times;</a>
         <a href="#" class="mobile-items">Home</a>
         <a href="#" class="mobile-items">About</a>
         <a href="#portfolio" class="mobile-items">Portfolio</a>
         <a href="#contact" class="mobile-items">Contact</a>
       </div>
 
-      <span class="openbtn" onclick="openNav()">&#9776; </span>
-
+      <!-- <span class="openbtn" onclick="openNav()">&#9776; </span> -->
+      <button id="dsd">poo</button>
+      <p id="ttt">mkmk</p>
       <!-- Hero Area  -->
       <div class="grid grid--1x2 welcome">
         <div class="welcome__section" data-aos="fade-up">
@@ -280,13 +279,13 @@
       AOS.init();
     </script>
     <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "75%";
-      }
+      document.getElementById("dsd").addEventListener("click", function () {
+        document.getElementById("mySidenav").style.width = "250px";
+      });
 
-      function closeNav() {
+      document.getElementById("kk").addEventListener("click", function () {
         document.getElementById("mySidenav").style.width = "0";
-      }
+      });
     </script>
     <script src="js/main.js"></script>
   </body>
