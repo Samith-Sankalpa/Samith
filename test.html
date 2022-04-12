@@ -1,57 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Samith Sankalpa" />
-    <meta property="og:description" content="UI/UX Engineer" />
-    <meta property="og:type" content="Website" />
-    <meta property="og:url" content="https://www.samith.me" />
-    <meta
-      name="description"
-      content="I have a passion and enthusiasm for innovation and am eager to learn something new whenever possible."
-    />
-    <title>Samith Sankalpa: UI/UX Engineer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Mobile Navigation Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/test.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <img
-            src="images/icons8-hamburger-menu-50.png"
-            alt=""
-            style="width: 32px"
-          />
-        </label>
-        <label class="logo-name">Samith.</label>
-        <ul>
-          <li><a href="" class="live-active">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- container  -->
 
-    <script src="js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <style>
+      /* Navigation bar styling */
+      .menu-list {
+        max-width: 300px;
+        margin: auto;
+        height: 500px;
+        color: white;
+        background-color: green;
+        border-radius: 10px;
+      }
+
+      /* logo, navigation menu styling */
+      .geeks {
+        overflow: hidden;
+        background-color: #111;
+        position: relative;
+      }
+
+      /* styling navigation menu */
+      .geeks #menus {
+        display: none;
+      }
+
+      /* link specific styling */
+      .geeks a {
+        text-decoration: none;
+        color: white;
+        padding: 14px 16px;
+        font-size: 16px;
+        display: block;
+      }
+
+      /* navigation toggle menu styling */
+      .geeks a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      /* hover effect on navigation logo and menu */
+      .geeks a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="menu-list">
+      <!-- Logo and navigation menu -->
+      <div class="geeks">
+        <a href="#" class="">GeeksforGeeks</a>
+        <div id="menus">
+          <a href="#">Language</a>
+          <a href="#">Practice</a>
+          <a href="#">Interview</a>
+          <a href="#">Puzzle</a>
+        </div>
+
+        <!-- Bar icon for navigation -->
+        <a href="javascript:void(0);" class="icon" onclick="geeksforgeeks()">
+          <i onclick="myFunction(this)" class="fa fa-plus-circle"> </i>
+        </a>
+      </div>
+    </div>
+
     <script>
-      AOS.init();
+      // Function to toggle the bar
+      function geeksforgeeks() {
+        var x = document.getElementById("menus");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+    <script>
+      // Function to toggle the plus menu into minus
+      function myFunction(x) {
+        x.classList.toggle("fa-minus-circle");
+      }
     </script>
   </body>
 </html>

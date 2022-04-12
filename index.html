@@ -25,24 +25,29 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <nav class="black">
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <img
-          src="images/icons8-hamburger-menu-50.png"
-          alt=""
-          style="width: 30px"
-        />
-      </label>
-      <label class="logo-name">Samith.</label>
-      <ul>
-        <li><a href="/index.html" class="live-active">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
     <div class="container">
+      <nav class="web-nav">
+        <a href="" class="logo">Samith.</a>
+        <ul class="main-nav">
+          <li class="nav-item">Home</li>
+          <li class="nav-item"><a href="/about.html">About</a></li>
+          <li class="nav-item">Portfolio</li>
+          <li class="nav-item">Contact</li>
+        </ul>
+      </nav>
+      <a href="" class="logo-mobile">Samith.</a>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#" class="mobile-items">Home</a>
+        <a href="#" class="mobile-items">About</a>
+        <a href="#portfolio" class="mobile-items">Portfolio</a>
+        <a href="#contact" class="mobile-items">Contact</a>
+      </div>
+
+      <span class="openbtn" onclick="openNav()">&#9776; </span>
+
       <!-- Hero Area  -->
       <div class="grid grid--1x2 welcome">
         <div class="welcome__section" data-aos="fade-up">
