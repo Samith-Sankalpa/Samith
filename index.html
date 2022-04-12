@@ -275,10 +275,19 @@
       </p>
     </div>
 
-    <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "75%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
