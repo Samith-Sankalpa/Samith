@@ -209,7 +209,7 @@ a {
     margin: 0 3rem;
   }
   .experience-block {
-    margin-bottom: 10rem;
+    margin-bottom: 16rem;
   }
 }
 
@@ -339,7 +339,11 @@ a {
 }
 
 /* Contact Section  */
-.contact-section {
+.contact-sectionx1 {
+  margin: 16rem 0 10rem 0;
+}
+
+.contact-sectionx2 {
   margin: 16rem 0 10rem 0;
 }
 
@@ -608,7 +612,7 @@ a {
 }
 
 .horizontal-card:hover {
-  background: #fff4b1; 
+  background: #caf58d5b; 
 }
 
 .horizontal-img {
@@ -747,6 +751,7 @@ li.nav-item:hover {
       font-size: 1.6rem;
       margin-right: 2rem;
     }
+    
   }
 
 
@@ -757,7 +762,7 @@ li.nav-item:hover {
       font-weight: 600;
       line-height: 8rem;
       color: var(--color-primary);
-    font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
     .web-nav {
       display: contents;
@@ -782,9 +787,82 @@ li.nav-item:hover {
        
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .logo  {
+      display: none;
+    }
+  }
 footer {
   display: none;
 }
+
+
+/* Quote  */
+
+.quote-web {
+  display: none;
+  background: #39d0489e; 
+  padding: 4rem 2rem;
+  grid-gap: 2rem;
+}
+
+.quote__image img{
+  width: 100%;
+}
+
+.quote__image-mobile {
+  display: flex;
+  justify-content: center;
+}
+
+.quote__image-mobile img{
+  width:50%;
+  margin : 3rem 0 5rem 0;
+}
+
+.quote__description {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-headings);
+}
+
+ 
+  .quote__description-mobile {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-headings);
+    text-align: center;
+  }
+ 
+
+@media screen and (min-width: 768px) {
+  .quote-web {
+    display: grid;
+    grid-template-columns: auto 35%;
+    padding: 6rem 9rem;
+  }
+  .quote-mobile {
+    display: none;
+  }
+  .quote__block {
+    align-self: center;
+  }
+  .quote__description  {
+    font-size: 3.2rem;
+    line-height: 6rem;
+    font-weight: 600;
+  }
+
+  .quote__image {
+    align-self: center;
+  }
+}
+
 
 
 /* Move to top  */
