@@ -11,6 +11,7 @@
    src: url(/сircular-font/Circular/CircularStd-Book.otf);
    font-family: circular-medium;
 }
+
  
 *,
 *::after,
@@ -19,6 +20,7 @@
   padding: 0;
   margin: 0; 
   list-style: none;
+  
 }
 
 html {
@@ -165,7 +167,7 @@ a {
 .personal__detail-block {
   text-align: left !important;  
   color: var(--color-body);
-  font-family: circular-light; 
+  /* font-family: circular-medium;  */
   text-align: center;
 }
 
