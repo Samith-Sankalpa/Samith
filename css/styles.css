@@ -87,8 +87,7 @@ a {
 }
 
 .link-arrow {
-  color: var(--color-headings);
-  font-family: 'Poppins', sans-serif;
+  color: var(--color-headings); 
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -217,24 +216,25 @@ a {
 
 
 .block__title {
-  color: var(--color-subHeadings);
-  font-family: 'Poppins', sans-serif;
+  color: #161637;
+  font-family: 'Martel Sans', sans-serif;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 0;
 }
 
 .block__description {
-  font-family: circular-medium;
+  font-family: 'Livvic', sans-serif;
   margin: 0.8rem 0;
   font-size: 1.8rem;
 }
 
 .block__period {
   color: var(--color-primary);
-  font-family: circular-medium;
-  font-size: 1.6rem;
+  font-family: 'Livvic', sans-serif;
+  font-size: 1.2rem;
   background: #eee;
+  font-weight: 600;
   width:  max-content;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -265,15 +265,15 @@ a {
 }
 
 .about__title {
-  color: var(--color-headings);
-  font-family: 'Poppins', sans-serif;
+  color: var(--color-headings); 
   font-size: 3.6rem;
+  font-family: 'Martel Sans', sans-serif;
   font-weight: 600;
   margin-bottom: 0;
 }
 
 .about__detail {
-  font-family: circular-medium;
+  font-family: 'Livvic', sans-serif;
   font-size: 1.8rem;
   line-height: 3.2rem;
   margin: 2rem 0 4rem 0;
@@ -442,8 +442,7 @@ a {
 }
 
 .copyright {
-  color: var(--color-body); 
-  font-family: 'Poppins', sans-serif;
+  color: var(--color-body);  
   font-size: 1.2rem; 
   text-align: center;
   margin: 0%;
@@ -800,7 +799,7 @@ footer {
 
 .quote-web {
   display: none;
-  background: #39d0489e; 
+  background: #f7f9fd ; 
   padding: 4rem 2rem;
   grid-gap: 2rem;
 }
@@ -822,17 +821,16 @@ footer {
 .quote__description {
   font-size: 1.8rem;
   font-weight: 500;
-  line-height: 3rem;
-  font-family: 'Poppins', sans-serif;
+  line-height: 3rem; 
   color: var(--color-headings);
+  font-family: 'Livvic', sans-serif;
 }
 
  
   .quote__description-mobile {
     font-size: 1.8rem;
     font-weight: 500;
-    line-height: 3rem;
-    font-family: 'Poppins', sans-serif;
+    line-height: 3rem; 
     color: var(--color-headings);
     text-align: center;
   }
