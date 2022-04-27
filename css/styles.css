@@ -132,7 +132,7 @@ a {
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Livvic', sans-serif;
   font-size: 1.6rem; 
   padding: 1rem 2rem;
   white-space: nowrap; 
@@ -145,9 +145,8 @@ a {
 .btn--secondary {
   color: var(--color-headings);
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Livvic', sans-serif;
   font-size: 1.6rem; 
-  font-weight: 500;
   text-decoration: underline;
   white-space: nowrap;
 }
@@ -243,7 +242,7 @@ a {
 
 .section-title {
   color: var(--color-primary);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Martel Sans', sans-serif;
   font-size: 2.8rem;
   font-weight: 700;
   text-align: center;
@@ -352,10 +351,8 @@ a {
 
 .centered {
   color: var(--color-body);
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: 'Martel Sans', sans-serif;
   text-align: center;
-   
 }
 
 .bold-text {
@@ -383,6 +380,7 @@ a {
 .hilight-text {
   font-size: 2rem; 
   color: var(--color-primary);
+  font-family: 'Livvic', sans-serif;
 }
 
  
@@ -399,7 +397,7 @@ a {
   
   .hilight-text {
       font-size: 2rem;
-      color: #21212198;
+      color: #212121c8;
   }
   .contact__labels {
     display: flex;
@@ -409,6 +407,7 @@ a {
 
   .social-name {
     margin-right: 5rem; 
+    font-family: 'IBM Plex Sans', sans-serif;
   }
   
 
@@ -417,8 +416,7 @@ a {
   color: var(--color-body); 
   }
   .bold-text {
-    font-size: 5rem;
-    font-family: 'Poppins', sans-serif;
+    font-size: 5rem; 
     
   }
   .centered  {
@@ -499,7 +497,7 @@ a {
  
  .welcome__heading { 
   color: var(--color-headings);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Martel Sans', sans-serif;
   font-size: 3.2rem; 
   font-weight: 600;
   line-height: 6rem;
@@ -507,8 +505,8 @@ a {
   /* ok  */
 } 
  
-.welcome__caption {
-  font-family: circular-medium;
+.welcome__caption { 
+  font-family: 'Livvic', sans-serif;
   font-size: 2rem; 
   margin: 3.2rem 0;
   /* ok  */
@@ -577,7 +575,7 @@ a {
 
 .card__title {
   color: var(--color-headings);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Martel Sans', sans-serif;
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
@@ -585,7 +583,7 @@ a {
  
 .card__description {
   color: var(--color-body);
-  font-family: circular-medium;
+  font-family: 'Livvic', sans-serif;
   font-size: 1.8rem;
   margin: 1rem 0 1.5rem 0;
 }
@@ -660,9 +658,8 @@ a {
  .logo-mobile {
   color:var(--color-primary);
   line-height: 8rem;
-  font-size: 3.2rem;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-size: 3.2rem; 
+  font-family: 'Megrim', cursive;
 }
 
 .openbtn {
@@ -676,22 +673,21 @@ li.nav-item > a {
   color: var(--color-headings);
 }
 
-li.nav-item:hover {
+li.nav-item > a:hover {
   text-decoration: underline;
-  transition: .5s;
+  color: var(--color-primary); 
 }
 
  .main-nav {
    float: right;
    display: flex;
-   line-height: 8rem;
-  font-family: 'Poppins', sans-serif;
+   line-height: 8rem; 
  }
      
 
   /* Navigation Mobile View  */
   .mobile-items {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     margin: 5.2rem 0;
     font-size: 1.8rem;
     color: #fff !important;
@@ -760,11 +756,10 @@ li.nav-item:hover {
   @media screen and (min-width: 768px) {
     
     a.logo {
-      font-size: 4rem;
-      font-weight: 600;
+      font-size: 4rem; 
       line-height: 8rem;
       color: var(--color-primary);
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Megrim', cursive;
     }
     .web-nav {
       display: contents;
@@ -772,6 +767,7 @@ li.nav-item:hover {
     .nav-item {
       margin-right: 3.6rem !important;
       font-size: 1.6rem;
+      font-family: 'IBM Plex Sans', sans-serif;
     }
     .logo-mobile {
       display: none;
