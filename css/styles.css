@@ -1,14 +1,14 @@
 :root {
   --color-accent: #ff3400;
   --color-body: #222222;
-  --color-headings: #0E185F;
-  --color-primary: #1300ed;
+  --color-headings: #24247b;
+  --color-primary: #232e80;
   --color-secondary: #00d9ff;
   --color-subHeadings: #030D16;
 }
 
  @font-face {
-   src: url(/сircular-font/Circular/CircularStd-Book.otf);
+   src: url(/font/EuclidCircularB-Regular.ttf);
    font-family: circular-medium;
 }
 
@@ -217,21 +217,21 @@ a {
 
 .block__title {
   color: #161637;
-  font-family: 'Martel Sans', sans-serif;
+  font-family: circular-medium;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 0;
 }
 
 .block__description {
-  font-family: 'Livvic', sans-serif;
+  font-family: circular-medium;
   margin: 0.8rem 0;
   font-size: 1.8rem;
 }
 
 .block__period {
   color: var(--color-primary);
-  font-family: 'Livvic', sans-serif;
+  font-family: circular-medium;
   font-size: 1.2rem;
   background: #eee;
   font-weight: 600;
@@ -242,7 +242,7 @@ a {
 
 .section-title {
   color: var(--color-primary);
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.8rem;
   font-weight: 700;
   text-align: center;
@@ -267,13 +267,13 @@ a {
 .about__title {
   color: var(--color-headings); 
   font-size: 3.6rem;
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   margin-bottom: 0;
 }
 
 .about__detail {
-  font-family: 'Livvic', sans-serif;
+  font-family: circular-medium;
   font-size: 1.8rem;
   line-height: 3.2rem;
   margin: 2rem 0 4rem 0;
@@ -351,7 +351,7 @@ a {
 
 .centered {
   color: var(--color-body);
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   text-align: center;
 }
 
@@ -380,7 +380,7 @@ a {
 .hilight-text {
   font-size: 2rem; 
   color: var(--color-primary);
-  font-family: 'Livvic', sans-serif;
+  font-family: circular-medium;
 }
 
  
@@ -496,7 +496,7 @@ a {
  
  .welcome__heading { 
   color: var(--color-headings);
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 3.2rem; 
   font-weight: 600;
   line-height: 6rem;
@@ -505,7 +505,7 @@ a {
 } 
  
 .welcome__caption { 
-  font-family: 'Livvic', sans-serif;
+  font-family: circular-medium;
   font-size: 2rem; 
   margin: 3.2rem 0;
   /* ok  */
@@ -574,7 +574,7 @@ a {
 
 .card__title {
   color: var(--color-headings);
-  font-family: 'Martel Sans', sans-serif;
+  font-family: circular-medium;
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
@@ -582,7 +582,7 @@ a {
  
 .card__description {
   color: var(--color-body);
-  font-family: 'Livvic', sans-serif;
+  font-family: circular-medium;
   font-size: 1.8rem;
   margin: 1rem 0 1.5rem 0;
 }
@@ -759,6 +759,8 @@ li.nav-item > a:hover {
       line-height: 8rem;
       color: var(--color-primary);
       font-family: 'Megrim', cursive;
+      background: rgb(255,255,255);
+      background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,0,1) 50%, rgba(255,255,0,1) 100%)
     }
     .web-nav {
       display: contents;
@@ -823,7 +825,7 @@ footer {
   font-weight: 500;
   line-height: 3rem; 
   color: var(--color-headings);
-  font-family: 'Livvic', sans-serif;
+  font-family: circular-medium;
 }
 
  
@@ -833,6 +835,7 @@ footer {
     line-height: 3rem; 
     color: var(--color-headings);
     text-align: center;
+    font-family: circular-medium;
   }
  
 
